@@ -13,8 +13,6 @@ router.get("/", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
-  // be sure to include its associated Products
 });
 
 router.get("/:id", async (req, res) => {
@@ -35,8 +33,6 @@ router.get("/:id", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
-  // be sure to include its associated Products
 });
 
 router.post("/", async (req, res) => {
